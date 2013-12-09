@@ -3,9 +3,39 @@
 <head>
     <title>Debug Demo</title>
     <script src="js/debug.js"></script>
+
+    <style type="text/css">
+
+        .box {
+            border: 1px dashed #ccc;
+            padding: 10px;
+            margin: 5px;
+        }
+
+    </style>
+
 </head>
 <body>
     <h1>Welcome to Debug Demo</h1>
-    <p>Open your console to view</p>
+    <p id="firstP">Open your console to view</p>
+
+    <h2>More things nice to know:</h2>
+    <h3>Select an Element of the DOM via console</h3>
+    <div class="box">
+        <code>
+            inspect($(&lt;selector&gt;));<br />
+            inspect($('#firstP'));
+        </code>
+    </div>
+
+    <h3>todo</h3>
+    <div class="box">
+        <code>
+            //todo
+            monitorEvents();
+        </code>
+    </div>
+
+
 </body>
 </html>
